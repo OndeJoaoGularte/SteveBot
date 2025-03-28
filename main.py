@@ -1,9 +1,8 @@
-from dotenv import load_dotenv
-import os
-
 import discord
 import random
 from discord.ext import commands
+from dotenv import load_dotenv
+import os
 
 import tree
 # import comandos

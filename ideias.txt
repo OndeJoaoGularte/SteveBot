@@ -1,0 +1,32 @@
+steve gosta de filosofia
+
+🎵 Música e Entretenimento
+Tocar música: Reproduzir músicas do YouTube, Spotify ou SoundCloud.
+
+Geração de memes: Criar memes automaticamente com base em templates.
+
+Trivia e Quiz: Perguntas sobre cultura pop, tecnologia, animes, etc.
+
+📢 Moderação e Gerenciamento de Servidor
+Sistema de cargos automáticos: Dar cargos automaticamente com reações ou após um tempo.
+
+🤖 Utilidades e Produtividade
+Busca no Google/Wikipedia: Trazer respostas rápidas para dúvidas.
+
+Conversor de moedas: Atualizar valores de câmbio em tempo real.
+
+Lembretes: Criar lembretes personalizados para os usuários.
+
+🎭 Interação e Engajamento
+Comandos de roleplay: Como /abraçar, /beijar, /tapa, /dançar, etc.
+
+Sistema de XP e Níveis: Usuários ganham pontos por participar do chat.
+
+Sistema de casamento: Usuários podem "casar" com amigos no servidor.
+
+💾 Desenvolvimento e Programação
+Explicador de código: O bot pode receber código e explicar o que ele faz.
+
+Documentação rápida: Buscar trechos da documentação de linguagens e frameworks.
+
+Gerenciamento de repositórios Git: Criar issues, listar commits e branches.
