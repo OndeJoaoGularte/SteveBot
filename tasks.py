@@ -36,7 +36,7 @@ def setup(bot):
         "12-10": "Feliz dia do Harry Styles!",
         "12-12": "Feliz Eleição!",
         "12-24": "Feliz Feriado de Natal 0!",
-        "12-26": "Feliz Feriado de Natal 2!",
+        "12-26": "Feliz Feriado de Natal 2!"
     }
 
     @tasks.loop(hours=24)
