@@ -48,7 +48,7 @@ def setup(bot):
             mensagem = f"@everyone 🔔 {lembretes[hoje]}"
             await canal.send(mensagem, allowed_mentions=discord.AllowedMentions(everyone=True))
 
-    @tasks.loop(time=time(13, 00))
+    @tasks.loop(time=time(9, 00))
     async def enviar_mensagem():
         canal = bot.get_channel(chat)
         if canal:
