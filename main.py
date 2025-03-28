@@ -39,19 +39,22 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    if bot.user in message.mentions:
-        await message.channel.send("Chamou?")
-
     mensagem = message.content.lower()
+    resposta = None
 
-    if mensagem.startswith("oi"):
-        respostas_oi = ["heyy", "hiii!", "hello!!", "hey :3", "hi :P"]
+    if bot.user in message.mentions:
+        respostas_mention = ["it's me, steVe!", "yes, it's me", "how can i help you?", "steVe here, guys", "i'm here!", "missed me? :3", "do you need steVe's help?"]
+        resposta = random.choice(respostas_mention)
+
+    elif "steve" in mensagem:
+        respostas_steve = ["heyy, that's my name!", "they call me steVen steVers in the streets, you know?", "STEvE", "that's me, pal", "are you my friend?", "are you a friend of mine? :3", "do you know me i?"]
+        resposta = random.choice(respostas_steve)
+
+    elif mensagem.startswith("oi"):
+        respostas_oi = ["heyy", "hiii!", "hello!!", "hey :3", "hi :P", "peace!"]
         resposta = random.choice(respostas_oi)
-        await message.channel.send(resposta)
 
-    if "steve" in mensagem:
-            respostas_steve = ["heyy", "hiii!", "hello!!", "hey :3", "hi :P"]
-            resposta = random.choice(respostas_steve)
-            await message.channel.send(resposta)
+    if resposta:
+        await message.channel.send(resposta)
 
 bot.run(token)
