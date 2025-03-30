@@ -1,11 +1,13 @@
 import discord
 from discord.ext import tasks
 from datetime import datetime, time
+from dotenv import load_dotenv
+import os
 
-def setup(bot):
-    chat=719744273989500951
+load_dotenv()
+canal = os.getenv("canal")
 
-    lembretes = {
+lembretes = {
         "01-05": "Feliz dia da Menina para todas as meninas fodas! :3",
         "01-21": "Feligui dirigui do diarigu! :3",
         "01-30": "Tô chorando cadê meu Club Penguin? ;-;",
@@ -39,20 +41,27 @@ def setup(bot):
         "12-26": "Feliz Feriado de Natal 2 para todos os natalinos! O Natal é tão bom que devia ser o ano todo :3"
     }
 
+def setup(bot):
     @tasks.loop(hours=24)
     async def verificar_lembretes():
         hoje = datetime.now().strftime("%m-%d")
-        canal = bot.get_channel(chat)
+        chat = bot.get_channel(canal)
 
-        if hoje in lembretes and canal:
-            mensagem = f"@everyone 🔔 {lembretes[hoje]}"
-            await canal.send(mensagem, allowed_mentions=discord.AllowedMentions(everyone=True))
+        if hoje in lembretes and chat:
+            mensagem = f"🔔 @everyone \n {lembretes[hoje]} "
+            await chat.send(mensagem, allowed_mentions=discord.AllowedMentions(everyone=True))
 
     @tasks.loop(time=time(9, 00))
     async def enviar_mensagem():
-        canal = bot.get_channel(chat)
-        if canal:
-            await canal.send("Tá na hora do Steve!")
+        chat = bot.get_channel(canal)
+        if chat:
+            await chat.send("Tá na hora do Steve!")
+
+    @tasks.loop(time=time(3, 12))
+    async def enviar_mensagem():
+        chat = bot.get_channel(canal)
+        if chat:
+            await chat.send("Tá na hora do Steve!")
 
     enviar_mensagem.start()
     verificar_lembretes.start()

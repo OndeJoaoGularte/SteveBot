@@ -1,19 +1,29 @@
-steve gosta de filosofia
+Roadmap do Steve
 
-🎵 Música e Entretenimento
-Tocar música: Reproduzir músicas do YouTube, Spotify ou SoundCloud.
+--------Baby Steve:
+/ping
+/falar
+/playlist
+/datas
+task de datas
 
-Geração de memes: Criar memes automaticamente com base em templates.
+--------Kid Steve:
+escrever segredos do steve (/segredo)
+lembretes personalizados (/lembrete)
+cargo para ser marcado nos lembretes (cargo steVeroner)
+comandos de roleplay com gifs e mentions (/bater, /beijar)
 
-📢 Moderação e Gerenciamento de Servidor
-Sistema de cargos automáticos: Dar cargos automaticamente com reações ou após um tempo.
+--------Teen Steve:
+sistema de casar e shipp com mentions (/casar, /shipp)
+fazer memes com base em templates e marcações (/meme)
 
-🤖 Utilidades e Produtividade
-Busca no Google/Wikipedia: Trazer respostas rápidas para dúvidas.
+--------Young Steve:
+cargo para ser marcado quando lançar vídeo do horário de verão (cargo steVideos)
 
-Lembretes: Criar lembretes personalizados para os usuários.
 
-🎭 Interação e Engajamento
-Comandos de roleplay: Como /abraçar, /beijar, /tapa, /dançar, etc.
+--------Adult Steve:
+pesquisa no google e wikipedia (/pesquisa)
 
-Sistema de casamento: Usuários podem "casar" com amigos no servidor.
+
+--------Old Steve:
+tocar música do youtube e spotify (/play, /queue, /skip, /pause)

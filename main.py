@@ -4,9 +4,8 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import os
 
-import tree
-# import comandos
-import tasks
+import tree as tree
+import tasks as tasks
 
 load_dotenv()
 token = os.getenv("token")
