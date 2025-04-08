@@ -1,29 +1,40 @@
 Roadmap do Steve
 
 --------Baby Steve:
-/ping
-/falar
-/playlist
-/datas
-task de datas
+/ping ✔️
+/falar ✔️
+/playlist ✔️
+/help ✔️
+/datas ✔️
+task de datas ✔️
 
 --------Kid Steve:
-escrever segredos do steve (/segredo)
+/segredo ✔️
+steve conta uma piada horrível (/piada)
+conselhos do steve (/conselho)
+cita frases do guru do sexo (/guru)
+nome do verão (/nome)
+horoscopo do steve (/oraculo)
+steve grita (/grita)
+steve conta um acontecimento do horário de verão (/acontecimento)
+steve manda uma camada aleatória do iceberg (/iceberg)
+versículo bíblico (/versiculo)
+/fato (steve conta algum fato histórico)
+/amor (mede o quanto steve te ama, sempre vai dar 100% e ele vai dizer o quanto ama seus amigos)
+
+--------Teen Steve:
 lembretes personalizados (/lembrete)
 cargo para ser marcado nos lembretes (cargo steVeroner)
 comandos de roleplay com gifs e mentions (/bater, /beijar)
 
---------Teen Steve:
-sistema de casar e shipp com mentions (/casar, /shipp)
-fazer memes com base em templates e marcações (/meme)
-
 --------Young Steve:
+sistema de casar e shipp com mentions (/casar, /shipp)
+sistema de luta com mentions (/duelo)
 cargo para ser marcado quando lançar vídeo do horário de verão (cargo steVideos)
-
 
 --------Adult Steve:
 pesquisa no google e wikipedia (/pesquisa)
-
+traduzir algo do inglês (/traduzir)
 
 --------Old Steve:
 tocar música do youtube e spotify (/play, /queue, /skip, /pause)

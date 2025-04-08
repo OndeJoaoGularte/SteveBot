@@ -20,7 +20,9 @@ async def setup(bot):
         "I secretly love watching \"Rap de Anime\" when I’m feeling stressed—it helps me relax and forget about everything for a while. Ordeeeem e Caaaos 🎶 ",
         "I once tried to learn how to play the guitar, but I gave up after a few lessons. I have sensitive fingers you know...",
         "sometimes, I sit by the window and watch the rain for hours. There's something so peaceful about it, I don't know what...",
-        "if I could live anywhere in the world, I think I’d love to live in Japan. They would call me \"steVe-san\" hehe dattebayo!"
+        "if I could live anywhere in the world, I think I’d love to live in Japan. They would call me \"steVe-san\" hehe dattebayo!",
+        "I've been studying Portuguese for a while to be able to communicate better with my friends from Horário de Verão",
+        "in 2022 I've created a League of Legends account. My nickname is ShadowKiller2011#br1, you can add me if you want to play! :3 (I'm very good okay?)"
         ]
 
     @bot.tree.command(name="segredo", description="Peça para o steVe te contar um segredo 🤫")

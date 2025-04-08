@@ -30,10 +30,6 @@ async def on_member_join(membro: discord.Member):
     await canal.send(f"bem vinda(o) {membro.mention}!")
 
 @bot.event
-async def on_reaction_add(reacao: discord.Reaction, membro: discord.Member):
-    await reacao.message.reply(f"isso {membro.display_name}, reage com {reacao.emoji} mesmo, assim você vai longe 👍🏾")
-
-@bot.event
 async def on_message(message):
     if message.author == bot.user:
         return
