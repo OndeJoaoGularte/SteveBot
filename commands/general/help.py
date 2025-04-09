@@ -20,12 +20,12 @@ async def setup(bot):
 
         embed.add_field(name="\u200B", value="\u200B", inline=False)
         embed.add_field(name="Comandos Úteis:", value="Comandos úteis para realizar alguma tarefa junto do seu amigo steVe! 🤗💞", inline=False)
-        embed.add_field(name="/lembrete", value="Deixa que o steVe te lembra! 📢", inline=True)
-        embed.add_field(name="/datas", value="Consulte as datas comemorativas do Horário de Verão! 🗓️", inline=True)
+        embed.add_field(name="/lembrete", value="Deixa que o steVe te lembra 📢", inline=True)
+        embed.add_field(name="/datas", value="Consulte as datas comemorativas do Horário de Verão 🗓️", inline=True)
 
         embed.add_field(name="\u200B", value="\u200B", inline=False)
         embed.add_field(name="Outras Funções:", value="Conheça as outras funções que seu amigo steVe realiza de forma autônoma e proativa! 🫡❣️", inline=False)
-        embed.add_field(name="Relembrar datas!", value="O steVe sempre vai nos lembrar dos feriados do Horário de Verão!  🎉", inline=True)
+        embed.add_field(name="Relembrar datas", value="O steVe sempre vai nos lembrar dos feriados do Horário de Verão  🎉", inline=True)
 
         embed.add_field(name="\u200B", value="\u200B", inline=False)
         embed.add_field(name="Tá na hora do steVe! 🕐", value="Mesmo sendo um cara meio desastrado, eu sempre dou o meu melhor todos os dias! Meus amigos contam comigo.", inline=True)
