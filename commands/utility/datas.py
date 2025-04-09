@@ -70,6 +70,6 @@ class DatasView(discord.ui.View):
         self.add_item(DatasSelect(lembretes))
 
 async def setup(bot):
-    @bot.tree.command(name="datas", description="Consulte as datas comemorativas do Horário de Verão! 📅")
+    @bot.tree.command(name="datas", description="Consulte as datas comemorativas do Horário de Verão 📅")
     async def datas(interaction: discord.Interaction):
         await interaction.response.send_message("**Escolha um semestre:**", view=SemestreView(), ephemeral=True)
