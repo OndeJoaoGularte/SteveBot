@@ -10,10 +10,9 @@ task de datas ✔️
 
 --------Kid Steve:
 /segredo ✔️
+/conselho ✔️
 steve conta uma piada horrível (/piada)
-conselhos do steve (/conselho)
 cita frases do guru do sexo (/guru)
-nome do verão (/nome)
 horoscopo do steve (/oraculo)
 steve grita (/grita)
 steve conta um acontecimento do horário de verão (/acontecimento)
@@ -23,6 +22,7 @@ versículo bíblico (/versiculo)
 /amor (mede o quanto steve te ama, sempre vai dar 100% e ele vai dizer o quanto ama seus amigos)
 
 --------Teen Steve:
+nome do verão (/nome)
 lembretes personalizados (/lembrete)
 cargo para ser marcado nos lembretes (cargo steVeroner)
 comandos de roleplay com gifs e mentions (/bater, /beijar)
