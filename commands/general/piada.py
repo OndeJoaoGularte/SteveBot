@@ -6,6 +6,6 @@ async def setup(bot):
         
         ]
 
-    @bot.tree.command(name="piada", description="Peça para o steVe te dar um piada 🤗")
+    @bot.tree.command(name="piada", description="Peça para o steVe te contar uma piada 🤣")
     async def piada(interact: discord.Interaction):
         await interact.response.send_message(random.choice(piadas))
