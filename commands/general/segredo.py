@@ -25,6 +25,6 @@ async def setup(bot):
         "in 2022 I've created a League of Legends account. My nickname is ShadowKiller2011#br1, you can add me if you want to play! :3 (I'm very good okay?)"
         ]
 
-    @bot.tree.command(name="segredo", description="Peça para o steVe te contar um segredo 🤫")
+    @bot.tree.command(name="segredo", description="Peça ao steVe para te contar um segredo 🤫")
     async def segredo(interact: discord.Interaction):
         await interact.response.send_message(random.choice(segredos), ephemeral=True)

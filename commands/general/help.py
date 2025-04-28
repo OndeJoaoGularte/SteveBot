@@ -23,20 +23,20 @@ class HelpSelect(discord.ui.Select):
             embed.add_field(name="/segredo", value="Peça ao steVe para te contar um segredo 🤫", inline=True)
             embed.add_field(name="/falar", value="Peça ao steVe para repetir algo 🗣️", inline=True)
             embed.add_field(name="", value="", inline=False)
-            embed.add_field(name="/piada", value="Peça ao steve para te contar uma piada 🤣", inline=True)
-            embed.add_field(name="/conselho", value="Peça ao steVe para te dar um conselho 🤗", inline=True)
-            embed.add_field(name="", value="", inline=False)
-            embed.add_field(name="/guru", value="Peça ao steve para recitar um ensinamento do guru 🪷", inline=True)
-            embed.add_field(name="/gritar", value="Peça ao steVe para gritar 😱", inline=True)
-            embed.add_field(name="", value="", inline=False)
-            embed.add_field(name="/oraculo", value="Peça ao steve para ver sua sorte 🍀", inline=True)
-            embed.add_field(name="/versiculo", value="Peça ao steVe recitar uma passagem bíblica 🕊️", inline=True)
-            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="/amor", value="Peça ao steVe para te contar o quanto ele te ama 💓", inline=True)
             embed.add_field(name="/acontecimento", value="Peça ao steve para te relembrar de algum acontecimento do Horário de Verão 🤔", inline=True)
-            embed.add_field(name="/iceberg", value="Peça ao steVe para explorar o iceberg do Horário de Verão 🧊", inline=True)
             embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="/conselho", value="Peça ao steVe para te dar um conselho 🤗", inline=True)
             embed.add_field(name="/fato", value="Peça ao steVe para te contar um fato histórico 🧐", inline=True)
-            embed.add_field(name="/amor", value="Peça ao steVe para calcular o quanto ele te ama 💓", inline=True)
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="/gritar", value="Peça ao steVe para gritar 😱", inline=True)
+            embed.add_field(name="/guru", value="Peça ao steve para recitar um ensinamento do guru 🪷", inline=True)
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="/iceberg", value="Peça ao steVe para explorar o iceberg do Horário de Verão 🧊", inline=True)
+            embed.add_field(name="/oraculo", value="Peça ao steve para ver sua sorte 🍀", inline=True)
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="/piada", value="Peça ao steve para te contar uma piada 🤣", inline=True)
+            embed.add_field(name="/versiculo", value="Peça ao steVe recitar uma passagem bíblica 🕊️", inline=True)
 
         elif self.values[0] == "Comandos Úteis":
             embed.title = "Comandos Úteis"
@@ -51,7 +51,7 @@ class HelpSelect(discord.ui.Select):
             embed.add_field(name="/casar", value="Peça a permissão do steve para casar com alguém 💍", inline=True)
             embed.add_field(name="", value="", inline=False)
             embed.add_field(name="/shipp", value="Peça ao steve para medir a química de um casal 🥰", inline=True)
-            embed.add_field(name="/duelo", value="Peça ao steve para calcular quem ganharia em um duelo ⚔️", inline=True)
+            embed.add_field(name="/duelo", value="Peça ao steve para dizer quem ganharia em um duelo ⚔️", inline=True)
 
         elif self.values[0] == "Outras Funções":
             embed.title = "Outras Funções"

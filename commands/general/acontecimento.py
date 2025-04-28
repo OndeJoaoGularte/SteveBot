@@ -2,10 +2,10 @@ import discord
 import random
 
 async def setup(bot):
-    piadas = [
+    acontecimentos = [
         
         ]
 
-    @bot.tree.command(name="piada", description="Peça para o steVe te dar um piada 🤗")
-    async def piada(interact: discord.Interaction):
-        await interact.response.send_message(random.choice(piadas))
+    @bot.tree.command(name="acontecimento", description="Peça ao steve para te relembrar de algum acontecimento do Horário de Verão 🤔")
+    async def acontecimento(interact: discord.Interaction):
+        await interact.response.send_message(random.choice(acontecimentos))

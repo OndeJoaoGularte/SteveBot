@@ -2,10 +2,10 @@ import discord
 import random
 
 async def setup(bot):
-    piadas = [
+    versículos = [
         
         ]
 
-    @bot.tree.command(name="piada", description="Peça para o steVe te dar um piada 🤗")
-    async def piada(interact: discord.Interaction):
-        await interact.response.send_message(random.choice(piadas))
+    @bot.tree.command(name="versículo", description="Peça ao steVe recitar uma passagem bíblica 🕊️")
+    async def versículo(interact: discord.Interaction):
+        await interact.response.send_message(random.choice(versículos))

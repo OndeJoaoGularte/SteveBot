@@ -22,10 +22,11 @@ async def setup(bot):
         "se você vir um pombo hoje... já sabe o que significa.",
         "dormir é bom, acordar é uma dádiva.",
         "lembre-se que há milhões de anticorpos que morreriam por você.",
-        "se tudo der errado, saiba que seu amigo steVe sempre estará aqui por você",
-        "uma vida irrefletida não vale a pena ser vivida."
+        "se tudo der errado, saiba que seu amigo steVe sempre estará aqui por você.",
+        "uma vida irrefletida não vale a pena ser vivida.",
+        "erga-se ou será erguido."
         ]
 
-    @bot.tree.command(name="conselho", description="Peça para o steVe te dar um conselho 🤗")
+    @bot.tree.command(name="conselho", description="Peça ao steVe para te dar um conselho 🤗")
     async def conselho(interact: discord.Interaction):
         await interact.response.send_message(random.choice(conselhos))
