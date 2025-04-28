@@ -23,6 +23,7 @@ async def setup(bot):
         "dormir é bom, acordar é uma dádiva.",
         "lembre-se que há milhões de anticorpos que morreriam por você.",
         "se tudo der errado, saiba que seu amigo steVe sempre estará aqui por você",
+        "erga-se ou seja erguido",
         "uma vida irrefletida não vale a pena ser vivida."
         ]
 
