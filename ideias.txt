@@ -31,6 +31,7 @@ comandos de roleplay com gifs e mentions (/bater, /beijar)
 sistema de casar e shipp com mentions (/casar, /shipp)
 sistema de luta com mentions (/duelo)
 cargo para ser marcado quando lançar vídeo do horário de verão (cargo steVideos)
+/rolagem (steve rola um d20)
 
 --------Adult Steve:
 pesquisa no google e wikipedia (/pesquisa)

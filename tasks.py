@@ -14,6 +14,7 @@ lembretes = {
         "04-04": "Feliz dia Oficial do Amor! Eu amo o amor e amo principalmente o direito das pessoas amarem quem elas quiserem :3",
         "21-04": "Feliz dia da Independência! Eu te amo ~~Ligeiro Engraçado~~ Alex Diferente :3",
         "30-04": "Feliz dia do FC da Yoshi para todas as Yoshis :3",
+        "08-05": "Feliz dia des Não-Bináries para todes es menines fodas! :3",
         "24-05": "O que é NINJAX?",
         "08-06": "Feliz dia da Proclamação do Império! Eu te amo Horário de Verão e faria tudo por você :3",
         "12-06": "Feliz dia dos Nomes! Eu amo os nomes malucos, é a minha parte preferida do Horário de Verão, eles me fazem muito feliz :3",

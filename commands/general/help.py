@@ -33,9 +33,9 @@ class HelpSelect(discord.ui.Select):
             embed.add_field(name="/guru", value="Peça ao steve para recitar um ensinamento do guru 🪷", inline=True)
             embed.add_field(name="", value="", inline=False)
             embed.add_field(name="/iceberg", value="Peça ao steVe para explorar o iceberg do Horário de Verão 🧊", inline=True)
-            embed.add_field(name="/oraculo", value="Peça ao steve para ver sua sorte 🍀", inline=True)
+            embed.add_field(name="/oraculo", value="Peça ao steVe para ler sua sorte nos astros 🍀", inline=True)
             embed.add_field(name="", value="", inline=False)
-            embed.add_field(name="/piada", value="Peça ao steve para te contar uma piada 🤣", inline=True)
+            embed.add_field(name="/piada", value="Peça ao steVe para te contar uma piada 🤣", inline=True)
             embed.add_field(name="/versiculo", value="Peça ao steVe recitar uma passagem bíblica 🕊️", inline=True)
 
         elif self.values[0] == "Comandos Úteis":
@@ -84,7 +84,7 @@ async def setup(bot):
         embed = discord.Embed(
             title="Ajuda do steVe",
             description="Escolha uma categoria abaixo para exibir uma lista com os comandos disponíveis 🤖",
-            color=discord.Color.orange()
+            color=discord.Color.from_rgb(0, 255, 127)
         )
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/719744273989500951/1355065126687866890/stevefoda.png")
         await interaction.response.send_message(embed=embed, view=HelpView(), ephemeral=True)
