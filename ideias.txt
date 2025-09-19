@@ -11,14 +11,14 @@ task de datas ✔️
 --------Kid Steve:
 /segredo ✔️
 /conselho ✔️
-steve conta uma piada horrível (/piada)
+/piada ✔️
+/oraculo ✔️
+/versiculo ✔️
+/gritar ✔️
+/acontecimento ✔️
+/fato ✔️
 cita frases do guru do sexo (/guru)
-horoscopo do steve (/oraculo)
-steve grita (/grita)
-steve conta um acontecimento do horário de verão (/acontecimento)
 steve manda uma camada aleatória do iceberg (/iceberg)
-versículo bíblico (/versiculo)
-/fato (steve conta algum fato histórico)
 /amor (mede o quanto steve te ama, sempre vai dar 100% e ele vai dizer o quanto ama seus amigos)
 
 --------Teen Steve:

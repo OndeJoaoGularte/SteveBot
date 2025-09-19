@@ -3,6 +3,7 @@ import random
 from discord.ext import commands
 from dotenv import load_dotenv
 import os
+from keep_alive import keep_alive
 
 import tree as tree
 import tasks as tasks
@@ -111,5 +112,5 @@ async def on_message(message):
 
     if resposta:
         await message.channel.send(resposta)
-
+keep_alive()
 bot.run(token)
