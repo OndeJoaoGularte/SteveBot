@@ -43,7 +43,7 @@ class SignoSelect(Select):
         info_signo = SIGNOS_INFO[signo_selecionado]
         
         embed = discord.Embed(
-            title=f"🍀 Oráculo do Steve para {info_signo['nome']} {info_signo['emoji']}",
+            title=f"🍀 steVe's Oracle for {info_signo['nome']} {info_signo['emoji']}",
             description=f"ok, me concentrei aqui e as estrelas me disseram o seguinte para você:\n\n> *{previsao_escolhida}*",
             color=discord.Color.from_rgb(0, 127, 255)
         )
@@ -66,4 +66,4 @@ async def setup(bot):
             description="eu também entendo um pouco de estrelas, sabia? :3 Selecione seu signo no menu abaixo para eu poder ler o que o futuro te reserva!",
             color=discord.Color.from_rgb(127, 127, 255)
         )
-        await interaction.response.send_message(embed=embed, view=OraculoView(), ephemeral=True)
+        await interaction.response.send_message(embed=embed, view=OraculoView())

@@ -53,7 +53,7 @@ def setup(bot):
     async def enviar_mensagem():
         chat = bot.get_channel(canal)
         if chat:
-            await chat.send("Tá na hora do Steve!")
+            await chat.send("Tá na hora do steVe!")
 
     enviar_mensagem.start()
     verificar_lembretes.start()
