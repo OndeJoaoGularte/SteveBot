@@ -13,9 +13,9 @@ async def setup(bot: discord.Client):
     await bot.load_extension("commands.general.versiculo")
     await bot.load_extension("commands.general.piada")
     await bot.load_extension("commands.general.oraculo")
-    '''
     await bot.load_extension("commands.general.guru")
     await bot.load_extension("commands.general.iceberg")
+    '''
     await bot.load_extension("commands.general.amor")
     '''
     

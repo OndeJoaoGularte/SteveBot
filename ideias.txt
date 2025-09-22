@@ -17,8 +17,8 @@ task de datas ✔️
 /gritar ✔️
 /acontecimento ✔️
 /fato ✔️
-cita frases do guru do sexo (/guru)
-steve manda uma camada aleatória do iceberg (/iceberg)
+/iceberg ✔️
+/guru ✔️
 /amor (mede o quanto steve te ama, sempre vai dar 100% e ele vai dizer o quanto ama seus amigos)
 
 --------Teen Steve:
