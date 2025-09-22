@@ -7,21 +7,20 @@ try:
         iceberg_data = json.load(f)
 except FileNotFoundError:
     print("[ERROR] 'iceberg.json' file not found.")
-    iceberg_data = {"Erro 🧊": ["Não consegui encontrar os segredos do iceberg..."]}
+    iceberg_data = {
+        "Erro 🧊": {
+            "topics": ["Não consegui encontrar os segredos do iceberg..."],
+            "image_url": "", "comments": ["Verifique se o arquivo existe."]
+        }
+    }
 except json.JSONDecodeError:
     print("[ERROR] 'iceberg.json' file is incorrectly formatted.")
-    iceberg_data = {"Erro 🧊": ["O mapa do iceberg está ilegível!"]}
-
-camada_imagens = {
-    "Camada 1: Baby Thiagão": "https://media.discordapp.net/attachments/719744273989500951/1419718314820763798/image.png",
-    "Camada 2: Charles Miner Mentioned": "https://media.discordapp.net/attachments/719744273989500951/1419718396668543149/image.png",
-    "Camada 3: Horário de Verão Curtindo o Verão": "https://media.discordapp.net/attachments/719744273989500951/1419718484971098243/image.png",
-    "Camada 4: Dudu com Pernas": "https://media.discordapp.net/attachments/719744273989500951/1419718576922693803/image.png",
-    "Camada 5: Emoji Buceteiro": "https://media.discordapp.net/attachments/719744273989500951/1419718643641745462/image.png",
-    "Camada 6: Alvin e os Esquilos": "https://media.discordapp.net/attachments/719744273989500951/1419718713036505162/image.png",
-    "Camada 7: Anime de Verão": "https://media.discordapp.net/attachments/719744273989500951/1419718784712970381/image.png",
-    "Camada 8: Louça no Cu": "https://media.discordapp.net/attachments/719744273989500951/1419718850240581742/image.png"
-}
+    iceberg_data = {
+        "Erro 🧊": {
+            "topics": ["O mapa do iceberg está ilegível!"],
+            "image_url": "", "comments": ["Verifique a sintaxe do JSON."]
+        }
+    }
 
 camada_cores = {
     "Camada 1": discord.Color.from_rgb(127, 255, 255),
@@ -34,36 +33,30 @@ camada_cores = {
     "Camada 8": discord.Color.from_rgb(0, 0, 0)
 }
 
-steve_comments = [
-    "exploring this is like real archaeology!",
-    "there are so many secrets buried here...",
-    "who knows what else is hiding in the depths?",
-    "this piece of history is fascinating!",
-    "the deeper we go, the stranger it gets..."
-]
-
 async def setup(bot):
     @bot.tree.command(name="iceberg", description="Peça ao steVe para explorar o iceberg do Horário de Verão 🧊")
     async def iceberg(interaction: discord.Interaction):
-        camada_sorteada = random.choice(list(iceberg_data.keys()))
+        camada_nome = random.choice(list(iceberg_data.keys()))
         
-        textos_da_camada = iceberg_data[camada_sorteada]
+        camada_dados = iceberg_data[camada_nome]
         
-        texto_sorteado = random.choice(textos_da_camada) if textos_da_camada else "Este tópico é um mistério..."
+        lista_topicos = camada_dados.get("topics", [])
+        imagem_url = camada_dados.get("image_url")
+        lista_comentarios = camada_dados.get("comments", ["..."])
 
-        camada_key = camada_sorteada.split(':')[0]
+        texto_sorteado = random.choice(lista_topicos) if lista_topicos else "Este tópico é um mistério..."
+        comentario_sorteado = random.choice(lista_comentarios)
+
+        camada_key = camada_nome.split(':')[0]
         cor_embed = camada_cores.get(camada_key, discord.Color.default())
-        imagem_embed = camada_imagens.get(camada_sorteada, None)
 
         embed = discord.Embed(
-            title=camada_sorteada,
+            title=camada_nome,
             description=f"### {texto_sorteado}",
             color=cor_embed
         )
         
-        if imagem_embed:
-            embed.set_image(url=imagem_embed)
-            
-        embed.set_footer(text=random.choice(steve_comments))
+        embed.set_thumbnail(url=imagem_url)
+        embed.set_footer(text=comentario_sorteado)
         
         await interaction.response.send_message(embed=embed)

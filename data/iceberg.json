@@ -1,42 +1,102 @@
 {
-    "Camada 1: Baby Thiagão":[
-        "secretária",
-        "fala direito menino",
-        "tchaubrigado"
-    ],
-    "Camada 2: Charles Miner Mentioned":[
-        "contemplar a realidade",
-        "sentar na minha caceta",
-        "os alienígenas frank"
-    ],
-    "Camada 3: Horário de Verão Curtindo o Verão":[
-        "flex de verão",
-        "bugwara",
-        "joao miando"
-    ],
-    "Camada 4: Dudu com Pernas":[
-        "areia na buceta",
-        "vamo loli",
-        "na hora da raiva"
-    ],
-    "Camada 5: Emoji Buceteiro":[
-        "é mestre ou é cellbit",
-        "arroz e feijão do lucas",
-        "emoji buceteiro"
-    ],
-    "Camada 6: Alvin e os Esquilos":[
-        "sabe me dizer se isso é python",
-        "leo peidão",
-        "caralho, yoshi?"
-    ],
-    "Camada 7: Anime de Verão":[
-        "tatuagem horário de verão",
-        "vocês têm 10 minutos",
-        "rato na cozinha"
-    ],
-    "Camada 8: Louça no Cu":[
-        "a namorada dele faz tudo errado",
-        "família pedra",
-        "kibe com batata palha"
-    ]
+    "Camada 1: Baby Thiagão": {
+        "topics": [
+            "secretária",
+            "fala direito menino",
+            "tchaubrigado"
+        ],
+        "image_url": "https://media.discordapp.net/attachments/719744273989500951/1419718314820763798/image.png",
+        "comments": [
+            "Isso aqui é o básico, todo mundo deveria saber! :3",
+            "Ah, os clássicos! Isso me traz boas memórias.",
+            "Essa é a ponta do iceberg, o começo de tudo."
+        ]
+    },
+    "Camada 2: Charles Miner Mentioned": {
+        "topics": [
+            "contemplar a realidade",
+            "sentar na minha caceta",
+            "os alienígenas frank"
+        ],
+        "image_url": "https://media.discordapp.net/attachments/719744273989500951/1419718396668543149/image.png",
+        "comments": [
+            "Ok, agora estamos começando a aprofundar um pouco.",
+            "Só quem estava lá desde o início vai lembrar disso.",
+            "Isso não é fascinante? 🧐"
+        ]
+    },
+    "Camada 3: Horário de Verão Curtindo o Verão": {
+        "topics": [
+            "flex de verão",
+            "bugwara",
+            "joao miando"
+        ],
+        "image_url": "https://media.discordapp.net/attachments/719744273989500951/1419718484971098243/image.png",
+        "comments": [
+            "As lendas dessa camada são um pouco mais obscuras...",
+            "Exploring this is like real archaeology!",
+            "Essa fase foi... interessante, para dizer o mínimo."
+        ]
+    },
+    "Camada 4: Dudu com Pernas": {
+        "topics": [
+            "areia na buceta",
+            "vamo loli",
+            "na hora da raiva"
+        ],
+        "image_url": "https://media.discordapp.net/attachments/719744273989500951/1419718576922693803/image.png",
+        "comments": [
+            "Estamos entrando em território perigoso agora.",
+            "There are so many secrets buried here...",
+            "Poucos conhecem as histórias desta profundidade."
+        ]
+    },
+    "Camada 5: Emoji Buceteiro": {
+        "topics": [
+            "é mestre ou é cellbit",
+            "arroz e feijão do lucas",
+            "emoji buceteiro"
+        ],
+        "image_url": "https://media.discordapp.net/attachments/719744273989500951/1419718643641745462/image.png",
+        "comments": [
+            "Cuidado, as águas aqui são escuras e profundas.",
+            "The deeper we go, the stranger it gets..."
+        ]
+    },
+    "Camada 6: Alvin e os Esquilos": {
+        "topics": [
+            "sabe me dizer se isso é python",
+            "leo peidão",
+            "caralho, yoshi?"
+        ],
+        "image_url": "https://media.discordapp.net/attachments/719744273989500951/1419718713036505162/image.png",
+        "comments": [
+            "Chegamos a um ponto de quase nenhum retorno.",
+            "Who knows what else is hiding in the depths?"
+        ]
+    },
+    "Camada 7: Anime de Verão": {
+        "topics": [
+            "tatuagem horário de verão",
+            "vocês têm 10 minutos",
+            "rato na cozinha"
+        ],
+        "image_url": "https://media.discordapp.net/attachments/719744273989500951/1419718784712970381/image.png",
+        "comments": [
+            "Apenas os escolhidos conhecem estas lendas.",
+            "Não conte a ninguém que te mostrei isso."
+        ]
+    },
+    "Camada 8: Louça no Cu": {
+        "topics": [
+            "a namorada dele faz tudo errado",
+            "família pedra",
+            "kibe com batata palha"
+        ],
+        "image_url": "https://media.discordapp.net/attachments/719744273989500951/1419718850240581742/image.png",
+        "comments": [
+            "Você chegou ao fundo. O conhecimento daqui é proibido.",
+            "O que é visto aqui, permanece aqui."
+        ]
+    }
 }
