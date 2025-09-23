@@ -13,8 +13,8 @@ async def setup(bot):
             color = discord.Color.red()
 
         embed = discord.Embed(
-            title="Hey, I'm steVe! 🍁",
-            description=f"hello **{interaction.user.display_name}**, my name is steVe! I love Horário de Verão :3",
+            title="Eu sou o steVe! 🍁",
+            description=f"oii **{interaction.user.display_name}**, meu nome é steVe! Eu amo o Horário de Verão :3",
             color=color
         )
         embed.set_footer(text=f"my response time is {latency_ms}ms.")

@@ -6,7 +6,7 @@ try:
     with open('data/iceberg.json', 'r', encoding='utf-8') as f:
         iceberg_data = json.load(f)
 except FileNotFoundError:
-    print("[ERROR] 'iceberg.json' file not found.")
+    print("[ERRO] Arquivo 'iceberg.json' não encontrado.")
     iceberg_data = {
         "Erro 🧊": {
             "topics": ["Não consegui encontrar os segredos do iceberg..."],
@@ -14,7 +14,7 @@ except FileNotFoundError:
         }
     }
 except json.JSONDecodeError:
-    print("[ERROR] 'iceberg.json' file is incorrectly formatted.")
+    print("[ERRO] O arquivo 'iceberg.json' contém um erro de formatação. Verifique as vírgulas e aspas.")
     iceberg_data = {
         "Erro 🧊": {
             "topics": ["O mapa do iceberg está ilegível!"],

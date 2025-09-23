@@ -1,26 +1,102 @@
 [
     {
-        "texto": "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",
-        "referencia": "João 3:16"
+        "text": "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",
+        "reference": "João 3:16"
     },
     {
-        "texto": "O Senhor é o meu pastor; nada me faltará.",
-        "referencia": "Salmos 23:1"
+        "text": "O Senhor é o meu pastor; nada me faltará.",
+        "reference": "Salmos 23:1"
     },
     {
-        "texto": "Posso todas as coisas em Cristo que me fortalece.",
-        "referencia": "Filipenses 4:13"
+        "text": "Posso todas as coisas em Cristo que me fortalece.",
+        "reference": "Filipenses 4:13"
     },
     {
-        "texto": "No princípio, criou Deus os céus и a terra.",
-        "referencia": "Gênesis 1:1"
+        "text": "No princípio, criou Deus os céus e a terra.",
+        "reference": "Gênesis 1:1"
     },
     {
-        "texto": "O caminho de Deus é perfeito; a palavra do Senhor é provada; é um escudo para todos os que nele confiam.",
-        "referencia": "Salmos 18:30"
+        "text": "Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento. Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas.",
+        "reference": "Provérbios 3:5-6"
     },
     {
-        "texto": "Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento. Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas.",
-        "referencia": "Provérbios 3:5-6"
+        "text": "Em todo tempo ama o amigo, e na angústia se faz o irmão.",
+        "reference": "Provérbios 17:17"
+    },
+    {
+        "text": "O coração alegre aformoseia o rosto, mas pela dor do coração o espírito se abate.",
+        "reference": "Provérbios 15:13"
+    },
+    {
+        "text": "Não to mandei eu? Esforça-te e tem bom ânimo; não pasmes, nem te espantes, porque o Senhor, teu Deus, é contigo, por onde quer que andares.",
+        "reference": "Josué 1:9"
+    },
+    {
+        "text": "Deem graças em todas as circunstâncias, pois esta é a vontade de Deus para vocês em Cristo Jesus.",
+        "reference": "1 Tessalonicenses 5:18"
+    },
+    {
+        "text": "Tudo tem o seu tempo determinado, e há tempo para todo o propósito debaixo do céu.",
+        "reference": "Eclesiastes 3:1"
+    },
+    {
+        "text": "O temor do Senhor é o princípio da sabedoria; bom entendimento têm todos os que cumprem os seus mandamentos.",
+        "reference": "Salmos 111:10"
+    },
+    {
+        "text": "Porque onde estiverem dois ou três reunidos em meu nome, aí estou eu no meio deles.",
+        "reference": "Mateus 18:20"
+    },
+    {
+        "text": "O amor é paciente, o amor é bondoso. Não inveja, не se vangloria, não se orgulha.",
+        "reference": "1 Coríntios 13:4"
+    },
+    {
+        "text": "Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei.",
+        "reference": "Mateus 11:28"
+    },
+    {
+        "text": "O choro pode durar uma noite, mas a alegria vem pela manhã.",
+        "reference": "Salmos 30:5b"
+    },
+    {
+        "text": "Porque a palavra de Deus é viva e eficaz, e mais cortante do que qualquer espada de dois gumes.",
+        "reference": "Hebreus 4:12"
+    },
+    {
+        "text": "Lâmpada para os meus pés é tua palavra e luz, para o meu caminho.",
+        "reference": "Salmos 119:105"
+    },
+    {
+        "text": "Ensina-nos a contar os nossos dias, de tal maneira que alcancemos corações sábios.",
+        "reference": "Salmos 90:12"
+    },
+    {
+        "text": "O homem de muitos amigos deve mostrar-se amigável, mas há um amigo mais chegado do que um irmão.",
+        "reference": "Provérbios 18:24"
+    },
+    {
+        "text": "Ainda que eu andasse pelo vale da sombra da morte, não temeria mal algum, porque tu estás comigo.",
+        "reference": "Salmos 23:4"
+    },
+    {
+        "text": "Combati o bom combate, acabei a carreira, guardei a fé.",
+        "reference": "2 Timóteo 4:7"
+    },
+    {
+        "text": "Pois a sabedoria é mais preciosa do que rubis; nada do que vocês possam desejar compara-se a ela.",
+        "reference": "Provérbios 8:11"
+    },
+    {
+        "text": "Portanto, não se preocupem com o amanhã, pois o amanhã trará as suas próprias preocupações. Basta a cada dia o seu próprio mal.",
+        "reference": "Mateus 6:34"
+    },
+    {
+        "text": "Alegrem-se na esperança, sejam pacientes na tribulação, perseverem na oração.",
+        "reference": "Romanos 12:12"
+    },
+    {
+        "text": "Ninguém tem maior amor do que este: de dar alguém a sua vida pelos seus amigos.",
+        "reference": "João 15:13"
     }
 ]

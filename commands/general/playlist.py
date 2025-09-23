@@ -7,9 +7,9 @@ async def setup(bot):
     @bot.tree.command(name="playlist", description="Conheça a Playlist favorita do steVe 🎶")
     async def playlist(interaction: discord.Interaction):
         embed = discord.Embed(
-            title="steVe's Playlist! 🎸",
+            title="Playlist do steVe! 🎸",
             description=(
-                "This is my favourite playlist :3"
+                "Essa é a minha playlist favorita :3"
             ),
             color=discord.Color.from_rgb(0, 255, 127)
         )

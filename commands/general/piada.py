@@ -20,10 +20,10 @@ try:
     with open('data/piadas.json', 'r', encoding='utf-8') as f:
         piadas = json.load(f)
 except FileNotFoundError:
-    print("[ERROR] 'piadas.json' file not found.")
+    print("[ERRO] Arquivo 'piadas.json' não encontrado.")
     piadas = [{"setup": "o steVe tá pensando numa piada", "punchline": "mas ele esqueceu...", "explanation": "acho que essa piada não foi boa, né?"}]
 except json.JSONDecodeError:
-    print("[ERROR] 'piadas.json' file is incorrectly formatted.")
+    print("[ERRO] O arquivo 'piadas.json' contém um erro de formatação. Verifique as vírgulas e aspas.")
     piadas = [{"setup": "o livro de piadas do steVe tá todo errado", "punchline": "ele não consegue ler nada!", "explanation": "acho que corrompeu o arquivo..."}]
 
 async def setup(bot):
@@ -32,7 +32,7 @@ async def setup(bot):
         piada_escolhida = random.choice(piadas)
         
         embed = discord.Embed(
-            title="Here's a joke for you! 😁",
+            title="Lá vai uma piada! 😁",
             description=f"**{piada_escolhida['setup']}**",
             color=discord.Color.from_rgb(127, 0, 255)
         )

@@ -7,7 +7,7 @@ try:
     with open('data/oraculo.json', 'r', encoding='utf-8') as f:
         oraculo_data = json.load(f)
 except FileNotFoundError:
-    print("[ERROR] 'oraculo.json' file not found.")
+    print("[ERRO] Arquivo 'oraculo.json' não encontrado.")
     oraculo_data = {}
 
 SIGNOS_INFO = {
@@ -28,7 +28,7 @@ class SignoSelect(Select):
                 emoji=info["emoji"]
             ) for signo, info in SIGNOS_INFO.items()
         ]
-        super().__init__(placeholder="Qual é o seu signo?", options=options)
+        super().__init__(placeholder="qual é o seu signo?", options=options)
 
     async def callback(self, interaction: discord.Interaction):
         signo_selecionado = self.values[0]
@@ -36,23 +36,21 @@ class SignoSelect(Select):
         previsoes = oraculo_data.get(signo_selecionado, [])
         
         if not previsoes:
-            await interaction.response.edit_message(content="Ops, parece que as estrelas estão silenciosas sobre este signo hoje...", embed=None, view=None)
+            await interaction.response.edit_message(content="ops, parece que as estrelas estão silenciosas sobre este signo hoje...", embed=None, view=None)
             return
             
         previsao_escolhida = random.choice(previsoes)
         info_signo = SIGNOS_INFO[signo_selecionado]
         
         embed = discord.Embed(
-            title=f"🍀 steVe's Oracle for {info_signo['nome']} {info_signo['emoji']}",
+            title=f"🍀 Oráculo do steVe para {info_signo['nome']} {info_signo['emoji']}",
             description=f"ok, me concentrei aqui e as estrelas me disseram o seguinte para você:\n\n> *{previsao_escolhida}*",
             color=discord.Color.from_rgb(0, 127, 255)
         )
         embed.set_footer(text="lembre-se: é só uma previsão e talvez esteja errada, você não precisa seguir a risca, tá? ;-;")
         
-        # Edita a mensagem original para mostrar o resultado, removendo o menu
         await interaction.response.edit_message(content=None, embed=embed, view=None)
 
-# View que contém o menu
 class OraculoView(View):
     def __init__(self):
         super().__init__()
@@ -62,7 +60,7 @@ async def setup(bot):
     @bot.tree.command(name="oraculo", description="Peça ao steVe para ler sua sorte nos astros 🍀")
     async def oraculo(interaction: discord.Interaction):
         embed = discord.Embed(
-            title="🔮 steVe's Astral Oracle 🔮",
+            title="🔮 Oráculo Astral do steVe 🔮",
             description="eu também entendo um pouco de estrelas, sabia? :3 Selecione seu signo no menu abaixo para eu poder ler o que o futuro te reserva!",
             color=discord.Color.from_rgb(127, 127, 255)
         )

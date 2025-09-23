@@ -6,7 +6,7 @@ try:
     with open('data/ensinamentos.json', 'r', encoding='utf-8') as f:
         ensinamentos = json.load(f)
 except FileNotFoundError:
-    print("[ERRO] Arquivo 'ensinamentos.json' não encontrado. O comando /ensinamento não terá ensinamentos para contar.")
+    print("[ERRO] Arquivo 'ensinamentos.json' não encontrado.")
     ensinamentos = ["steVe não encontrou seu diário..."]
 except json.JSONDecodeError:
     print("[ERRO] O arquivo 'ensinamentos.json' contém um erro de formatação. Verifique as vírgulas e aspas.")
@@ -16,7 +16,7 @@ async def setup(bot):
     @bot.tree.command(name="ensinamento", description="Peça ao steVe para recitar um ensinamento do guru 🪷")
     async def ensinamento(interaction: discord.Interaction):
         if not ensinamentos:
-            await interaction.response.send_message("looks like I'm out of teachings today...")
+            await interaction.response.send_message("parece que tô sem ensinamentos para passar hoje...")
             return
             
         ensinamento_escolhido = random.choice(ensinamentos)
