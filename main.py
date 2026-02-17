@@ -1,116 +1,74 @@
 import discord
 import random
+import json
+import os
 from discord.ext import commands
 from dotenv import load_dotenv
-import os
 from keep_alive import keep_alive
 
-import tree as tree
-import tasks as tasks
+# Importações dos seus módulos
+import tree
+import tasks
 
+# Configurações iniciais
 load_dotenv()
 token = os.getenv("token")
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix=commands.when_mentioned, intents=intents)
 
+# Carregar as frases do JSON
+try:
+    with open('data/chat.json', 'r', encoding='utf-8') as f:
+        chat_data = json.load(f)
+except FileNotFoundError:
+    print("❌ Erro: Arquivo data/chat.json não encontrado!")
+    chat_data = {"mentions": [], "steve_keyword": [], "greetings": []}
+
 @bot.event
 async def on_ready():
     await carregar_comandos()
     tasks.setup(bot)
-    print("tá funcionando")
+    print(f"✅ steVe está online como {bot.user}")
 
 async def carregar_comandos():
     await tree.setup(bot)
-    sincs = await bot.tree.sync()
-    print(f"{len(sincs)} comandos sincronizados!")
+    try:
+        sincs = await bot.tree.sync()
+        print(f"✨ {len(sincs)} comandos sincronizados!")
+    except Exception as e:
+        print(f"❌ Erro ao sincronizar comandos: {e}")
 
 @bot.event
 async def on_member_join(membro: discord.Member):
+    # Canal de boas-vindas
     canal = bot.get_channel(719744273989500951)
-    await canal.send(f"bem vinda(o) {membro.mention}!")
+    if canal:
+        await canal.send(f"Bem vinda(o) {membro.mention}! O steVe estava te esperando! :3")
 
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
         return
 
-    mensagem = message.content.lower()
-    resposta = None
+    msg_lower = message.content.lower()
+    user_name = message.author.display_name
+    response = None
 
+    # Lógica de resposta baseada no JSON
     if bot.user in message.mentions:
-        respostas_mention = [
-            "sou eu, steVe!", 
-            f"sim {message.author.display_name}, sou eu!", 
-            "como posso te ajudar?", 
-            "steVe aqui, galera!", 
-            "cheguei!", 
-            f"oii {message.author.display_name}, sentiu minha falta? :3", 
-            "precisa da ajuda do steVe?",
-            "chamou? 0 .0",
-            f"{message.author.display_name}, você summonou o steVe :v",
-            "eu ouvi meu nomeee... >.<",
-            f"oii {message.author.display_name}, tava dormindo ;-;... o que aconteceu?",
-            f"quem me acordou? ah, é você, {message.author.display_name} :3",
-            "sim? me chamou? :3",
-            f"oii {message.author.display_name}, tô aqui :)",
-            "steVe tá sempre pronto pra ajudar :D",
-            "precisa de mim? hehe :3",
-            "e aí? sou o steVe :)",
-            f"oii {message.author.display_name}, como posso te ajudar?",
-            "steVe aqui, o primeiro e único :3",
-            f"precisa de ajuda, {message.author.display_name}? vou dar o meu melhor :)"
-        ]
-        resposta = random.choice(respostas_mention)
+        response = random.choice(chat_data["mentions"])
+    elif "steve" in msg_lower:
+        response = random.choice(chat_data["steve_keyword"])
+    elif msg_lower.startswith("oi"):
+        response = random.choice(chat_data["greetings"])
 
-    elif "steve" in mensagem:
-        respostas_steve = [
-            f"oii {message.author.display_name}, esse é meu nome!", 
-            "me chamam de El steVo nas ruas, sabia?", 
-            "STEvE", 
-            f"sou eu, {message.author.display_name}", 
-            "você é meu amigo?", 
-            "você é amigo de eu? :3", 
-            "você sabe eu?",
-            "alguém aqui disse steVe? :3",
-            f"steVe... sou eu! e você é {message.author.display_name}!",
-            "tá falando comigo?? steVe?? >.<",
-            "eu amo ouvir meu nome :D",
-            "fico feliz quando me chamam ;-;",
-            f"{message.author.display_name}, tá falando sobre... mim? hehe >:3",
-            "steVe pronto pro serviço! >:D",
-            f"alguém disse steVe? esse sou eu :)",
-            "esse é meu nome! :3",
-            "tô famoso, né? hehe",
-            f"oii {message.author.display_name}, você disse meu nome? :D",
-            "as pessoas sempre falam de mim... :3",
-            "eu não sou tímido, pode falar comigo quando quiser :)"
-            ]
-        resposta = random.choice(respostas_steve)
+    if response:
+        # Troca o {user} pelo nome real da pessoa
+        await message.channel.send(response.replace("{user}", user_name))
 
-    elif mensagem.startswith("oi"):
-        respostas_oi = [
-            f"oii {message.author.display_name}!", 
-            f"{message.author.display_name}!! oiii!", 
-            "olá!!", 
-            "e aí :3", 
-            f"oii {message.author.display_name} :P", 
-            f"olá {message.author.display_name}!",
-            "oii :D",
-            f"e aí {message.author.display_name} :)",
-            "que oi fofo :3",
-            f"olá olá {message.author.display_name}",
-            "amo quando as pessoas me dão oi :)",
-            "oi! quer ser meu amigo? :3",
-            f"como você tá, {message.author.display_name}? :D",
-            "oi oi oi oiiiii!!",
-            f"meu deus é você, {message.author.display_name}!! >.<",
-            "você disse oi? oiiiiii pra você :P",
-            f"ei {message.author.display_name}, tudo certo?",
-            "e aí aí e aí aí ei e aí! hehe fui malandro agora :3"
-            ]
-        resposta = random.choice(respostas_oi)
+    # Necessário para que o bot ainda processe comandos prefixados
+    await bot.process_commands(message)
 
-    if resposta:
-        await message.channel.send(resposta)
+# Inicia o servidor de keep_alive e o bot
 keep_alive()
 bot.run(token)
