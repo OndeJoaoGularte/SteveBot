@@ -7,6 +7,8 @@ lembretes1 = {
     "11-02": {"nome": "Dia do Cellbit", "descricao": "rpg do cellbit"},
     "25-02": {"nome": "Dia do Sonegator Robinson", "descricao": "O primeiro Carnaval de Verão do Horário de Verão, onde o grande Chico Melancia deixou de ser um garoto para, enfim, se tornar um homem!"},
     "10-03": {"nome": "Dia do Maledeto", "descricao": "nós te amamos Maledeto  😍"},
+    "11-03": {"nome": "Dia da Morte do Steve", "descricao": "O dia em que nosso querido Steve nos deixou para se tornar um anjo e cuidar de nós lá de cima..."},
+    "13-03": {"nome": "Feriado de Páscoa 0", "descricao": "Poucos dias após a morte de Steve, ele renasceu para a felicidade de todos nós!"},
     "04-04": {"nome": "Dia Oficial do Amor", "descricao": "Comemoração do primeiro casamento realizado na República Horário de Verão!"},
     "21-04": {"nome": "Dia da Independência", "descricao": "O salvador retornou e Horário de Verão pôde voltar às suas verdadeiras raízes"},
     "30-04": {"nome": "Dia do FC da Yoshi", "descricao": "Coroação do maior ídolo do Horário de Verão!"},
